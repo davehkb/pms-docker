@@ -9,6 +9,6 @@ services:
       - PLEX_CLAIM=<claimToken>
     network_mode: host
     volumes:
-      - <path/to/plex/database>:/config
-      - <path/to/transcode/temp>:/transcode
-      - <path/to/media>:/data
+      - /home/${USER}/plex/config:/config
+      - /home/${USER}/plex/transcode:/transcode
+      - /home/${USER}/plex/data:/data
